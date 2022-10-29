@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TITLE -->
+
+    <title>Hibbert Luxury Essentials</title>
+
+    <!-- FONT AWESOME ICONS -->
+
+    <script src="https://kit.fontawesome.com/31b1bccd78.js" crossorigin="anonymous"></script>
+
+    <!-- IONICONS -->
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+    <!-- GOOGLE FONTS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
+
+    <!-- FAVICON -->
+
+    <link rel="icon" type="image/x-icon" href="https://lh3.googleusercontent.com/EZfpNotRKcIH8Dzp-1dR9aOUakeqiwYbdzj-XDwH7f_JV4HEr6syae3bep_WzgEjb7o1olNv7tGiePSjW1ebD3extMcPxPvwMXSVySHihqKLD-gkphtNjyNe8zUd1YzTruzdZCUn8T4=w2400">
+
+    <!-- CSS STYLESHEET -->
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <nav class="nav">
+        <div class="container-1">
+            <div class="logo">
+                <a href="index.html"><img id = "logo" src="https://lh3.googleusercontent.com/5iV1Gbpvi3YMYjMVu_p4iVpTbcG3PyQFsgbtU7xJ_lXhXWrKNkIBNvl7XkoxPSvoPasHGCrOaPFfFWrM0zLc8NDAnjLgqw2FWKS52smW74_LKU9hfhsFpK61jBhXIQFMjbGcXIlpmb4=w2400" alt="Image cannot be displayed"></a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#booking">BOOKING</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <!-- JQUERY NEEDED -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="nav.js"></script>
+
+    <!-- FUNCTION USED TO SHRINK NAVBAR REMOVING PADDINGS AND ADDING BLACK BACKGROUND -->
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+
+    <div class="header-section">
+        <img id="header-photo" src="https://www.superpages.com/em/wp-content/uploads/2015/06/Top-10-Pros-and-Cons-of-Luxury-Apartments-for-Rent.jpg" alt="Image cannot be displayed" />
+        <div class="info">
+          <h1 class="header-h1">HIBBERT LUXURY ESSENTIALS WELCOMES YOU</h1>
+          <h2>At the corner of luxury and comfort, we have it all! From fantastic amenities to prime locations, we offer 
+              bookings that you simply cannot resist!
+          </h2>
+        </div>
+    </div>
+
+    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <symbol id="icon-right-arrow" viewBox="0 0 32 32">
+                <title>right-arrow</title>
+                <path fill="#fff" style="fill: #fff" d="M24.889 14.751l-14.24-14.24c-0.329-0.33-0.769-0.511-1.238-0.511s-0.908 0.182-1.238 0.511l-1.049 1.048c-0.682 0.683-0.682 1.794 0 2.476l11.958 11.958-11.971 11.971c-0.329 0.33-0.511 0.769-0.511 1.238s0.182 0.908 0.511 1.238l1.049 1.048c0.33 0.33 0.769 0.511 1.238 0.511s0.908-0.182 1.238-0.511l14.254-14.253c0.33-0.331 0.511-0.772 0.51-1.242 0.001-0.471-0.18-0.912-0.51-1.243z"></path>
+            </symbol>
+        </defs>
+    </svg>
+    <main>
+
+    <section id="product">
+        <div class="product-container">
+            <div class="product-items">
+                <i class="fa-solid fa-location-crosshairs"></i>
+                <h2 class="product-title">convenient locations</h2>
+                <p class="product-text">Picture booking an Airbnb for your vacation and having major shopping centers, restaurants,
+                    and grocery stores so close in proximity that you don't even need a vehicle to get to them! It doesn't get any better than this!
+                </p>
+            </div>
+
+            <div class="product-items">
+                <i class="fa-solid fa-scissors"></i>
+                <h2 class="product-title">book a haircut</h2>
+                <p class="product-text">We pride ourselves in offering services that no other Airbnb host does! Need a haircut? Book with us 
+                    and notify us of your requirements so we can properly accomodate for your stay! A quality cut free of charge!
+                </p>
+            </div>
+
+            <div class="product-items">
+                <i class="fa-solid fa-computer"></i>
+                <h2 class="product-title">dedicated workspace</h2>
+                <p class="product-text">On a business trip and need somewhere to do your work? Our units have dedicated workspaces with spacious desks and curved monitors
+                    34"+, suitable for an ideal worker in need of a computer!
+                </p>
+            </div>
+        </div>
+    </section>
+
+      
+    <div class="first-section">
+        <div class="first-cont">
+            <i style = "color: #00b7ff;" class="fa-solid fa-circle-exclamation"></i>
+            <h3 class = "f-h3">Our team works actively to ensure that your visits are always memorable experiences!</h3>
+        </div>
+    </div>
+
+    <div class="third-section">
+        <div class="third-container">
+            <h1 class="t-h1">WHAT OUR UNITS INLCUDE</h1>
+            <div class = "t-p-cont">
+                <div class="item">Rooftop lounges</div>
+                <div class="item">Grills</div>
+                <div class="item">Gyms</div>
+                <div class="item">Common Areas</div>
+                <div class="item">Clubrooms</div>
+                <div class="item">Modern appliances</div>
+                <div class="item">Central air</div>
+                <div class="item">And so much more!</div>
+            </div>
+        </div>
+    </div>
+
+    <section class = "flexible">
+        <div class="flexible-container">
+            <h1 class="h-h1">
+                FLEXIBLE LENGTH STAYS & ACCOMODATIONS
+            </h1>
+            <p style="border-bottom: 3px solid #00b7ff; width: 5rem; text-align: center; display: block; margin: 0 auto; padding-top: 1rem;"></p>
+            <h3 class="h-h3">
+                Have you ever needed a place to stay for an extended period of time because you're traveling for work, business, or for personal reasons?
+            </h3>
+        </div>
+        <div class="h-cont">
+            <div class="cont-int">
+                <i class="fa-solid fa-fa-solid fa-arrows-rotate"></i>
+                <h1 class="cont-h1">FLEXIBILITY</h1>
+                <p class="cont-p">
+                    Stay as long as you'd like with our flexible length stays in mind. We negotiate price, dates, and so much more!
+                </p>
+            </div>
+            <div class="cont-int">
+                <i class="fa-solid fa-fa-solid fa-message"></i>
+                <h1 class="cont-h1">ATTENTIVENESS</h1>
+                <p class="cont-p">
+                    Consider doing business with a company who cares about you and ensures your needs are always met!
+                </p>
+            </div>
+            <div class="cont-int">
+                <i class="fa-solid fa-fa-solid fa-briefcase"></i>
+                <h1 class="cont-h1">ACCOMODATION</h1>
+                <p class="cont-p">
+                    When you book a unit with Hibbert Luxury Essentials, we always provide accomodations, no matter how frivolous!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id = "about">
+        <div class="about-container">
+            <h1 class="about-h1">
+                ABOUT US
+            </h1>
+            <p class="about-p">
+                Hibbert Luxury Essentials (HLE) is a subleasing business focused on providing others who are traveling the globe
+                with a place to lay their heads while on vacation. But, not just any place to indulge in a night of sleep... here at HLE
+                we combine the feel of a luxury stay with worldclass services. 
+                <br><br>
+                To us, it is not just about having somewhere to stay for the time being while on vacation. Rather, it has to do with feeling comfortable 
+                in the state, city, and immediate area you are in. It is about the quality and significance of your stay that motive us to provide
+                our best work.
+                <br><br>
+                This business was built by individuals who are passionate in the field of helping others. Kindness, attentivness, and cleanliness are some of 
+                the words that captivate who we are, what we provide, and how we go about doing so!
+            </p>
+        </div>
+    </section>
+
+    <section id = "gallery">
+        <h1 class="gallery-h1">
+            GALLERY
+        </h1>
+    </section>
+
+
+    <div class="container-7">
+	
+        <div class="feature">
+            <figure class="featured-item image-holder r-3-2 transition"></figure>
+        </div>
+        
+        <div class="gallery-wrapper">
+            <div class="gallery">
+                    <div class="item-wrapper">
+                        <figure class="gallery-item image-holder r-3-2 active transition"></figure>
+                    </div>
+                    <div class="item-wrapper">
+                        <figure class="gallery-item image-holder r-3-2 transition"></figure>
+                    </div>
+                    <div class="item-wrapper">
+                        <figure class="gallery-item image-holder r-3-2 transition"></figure>
+                    </div>
+                    <div class="item-wrapper">
+                        <figure class="gallery-item image-holder r-3-2 transition"></figure>
+                    </div>
+                    <div class="item-wrapper">
+                        <figure class="gallery-item image-holder r-3-2"></figure>
+                    </div>
+                    <div class="item-wrapper">
+                        <figure class="gallery-item image-holder r-3-2 transition"></figure>
+                    </div>
+                    <div class="item-wrapper">
+                        <figure class="gallery-item image-holder r-3-2 transition"></figure>
+                    </div>
+                    <div class="item-wrapper">
+                        <figure class="gallery-item image-holder r-3-2 transition"></figure>
+                    </div>
+                    <div class="item-wrapper">
+                        <figure class="gallery-item image-holder r-3-2 transition"></figure>
+                    </div>
+                    <div class="item-wrapper">
+                        <figure class="gallery-item image-holder r-3-2 transition"></figure>
+                    </div>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button class="move-btn left">&larr;</button>
+            <button class="move-btn right">&rarr;</button>
+        </div>
+        
+    </div>
+
+    <script>
+        var gallery = document.querySelector('.gallery');
+        var galleryItems = document.querySelectorAll('.gallery-item');
+        var numOfItems = gallery.children.length;
+        var itemWidth = 23; // percent: as set in css
+
+        var featured = document.querySelector('.featured-item');
+
+        var leftBtn = document.querySelector('.move-btn.left');
+        var rightBtn = document.querySelector('.move-btn.right');
+        var leftInterval;
+        var rightInterval;
+
+        var scrollRate = 0.2;
+        var left;
+
+        function selectItem(e) {
+            if (e.target.classList.contains('active')) return;
+            
+            featured.style.backgroundImage = e.target.style.backgroundImage;
+            
+            for (var i = 0; i < galleryItems.length; i++) {
+                if (galleryItems[i].classList.contains('active'))
+                    galleryItems[i].classList.remove('active');
+            }
+            
+            e.target.classList.add('active');
+        }
+
+        function galleryWrapLeft() {
+            var first = gallery.children[0];
+            gallery.removeChild(first);
+            gallery.style.left = -itemWidth + '%';
+            gallery.appendChild(first);
+            gallery.style.left = '0%';
+        }
+
+        function galleryWrapRight() {
+            var last = gallery.children[gallery.children.length - 1];
+            gallery.removeChild(last);
+            gallery.insertBefore(last, gallery.children[0]);
+            gallery.style.left = '-23%';
+        }
+
+        function moveLeft() {
+            left = left || 0;
+
+            leftInterval = setInterval(function() {
+                gallery.style.left = left + '%';
+
+                if (left > -itemWidth) {
+                    left -= scrollRate;
+                } else {
+                    left = 0;
+                    galleryWrapLeft();
+                }
+            }, 1);
+        }
+
+        function moveRight() {
+            //Make sure there is element to the leftd
+            if (left > -itemWidth && left < 0) {
+                left = left  - itemWidth;
+                
+                var last = gallery.children[gallery.children.length - 1];
+                gallery.removeChild(last);
+                gallery.style.left = left + '%';
+                gallery.insertBefore(last, gallery.children[0]);	
+            }
+            
+            left = left || 0;
+
+            leftInterval = setInterval(function() {
+                gallery.style.left = left + '%';
+
+                if (left < 0) {
+                    left += scrollRate;
+                } else {
+                    left = -itemWidth;
+                    galleryWrapRight();
+                }
+            }, 1);
+    }
+
+        function stopMovement() {
+            clearInterval(leftInterval);
+            clearInterval(rightInterval);
+        }
+
+        leftBtn.addEventListener('mouseenter', moveLeft);
+        leftBtn.addEventListener('mouseleave', stopMovement);
+        rightBtn.addEventListener('mouseenter', moveRight);
+        rightBtn.addEventListener('mouseleave', stopMovement);
+
+
+        //Start this baby up
+        (function init() {
+            var images = [
+                'https://lh3.googleusercontent.com/-iG2pZA6FLpJbtuOMi4aiMTyrx1ldVeemUFXfgWZmLvDV_bgULt0hHYMMXBv56_CsfX29po4CHMnTNJQJD9DTr67WUFRuimIfd8tVujJbBXjzYdzoFEFo6CPKiMX1siqS07cYYNdZRw=w2400',
+                'https://lh3.googleusercontent.com/BziY9NMfC4TjHnWXNK4V7tidmQV7lT9RufbQJTUqnmaCfO24n0M3Dh2FnWbS0tyMXWuxKUB084iu338wYKz5Ls7GW8e-Q2gs_tmlMtPkGrZMWA99T7nSEYFt9nnuONUNLrmBJYymNKE=w2400',
+                'https://lh3.googleusercontent.com/XE9ZFpPe3Y6Y-dFrvM1VrZK5AXipKkzuOP7gIEbIu4OBWicLkRER0nVy9UcWe6PjzItqeJFEUkKGiWuWakWWRkb4rixG0jY-97Hffcs2CTxPGy83KqdpND7lus9zahn_sBhhDa-DzcY=w2400',
+                'https://lh3.googleusercontent.com/mfrHzmvEF8WKNVUVosSx3TrSwrC5uwbuCiBQIedbCoR_qY0dMV-I94OXpl3OV6dbWun98h5ahXryPtSGUYuFCXXHsf2kdM9Hh22Ja6h6_Knea0Eb1nZveGAoLEsk1FC6znzf3DJqGhs=w2400',
+                'https://lh3.googleusercontent.com/M29fcwTbGG9z2BbcHiIDUbEdeFfGBsYJA8VbPyrYzkexutITRSCNGB30j1zVQZlRZZ8g2qgc9PBFui-eCK2VpSVvQ0aEN-zY3_LU4LxWrxXWACzh5-kKoBLwfikq_KuhTwT9_GXYK0E=w2400',
+                'https://lh3.googleusercontent.com/1knignWtvY4iyrBYxSk4-LY6-kUKHIpTIgVUB_kfVL7PofSg63rVoB9kop4tm63_RRqSEtp07jLclqfsxBeIJAh-rIX_--sWOcet9UGm_os5R6TuHzcmshDgJgDQHEllLWzxpNDpg48=w2400',
+                
+            ];
+            
+            //Set Initial Featured Image
+            featured.style.backgroundImage = 'url(' + images[0] + ')';
+            
+            //Set Images for Gallery and Add Event Listeners
+            for (var i = 0; i < galleryItems.length; i++) {
+                galleryItems[i].style.backgroundImage = 'url(' + images[i] + ')';
+                galleryItems[i].addEventListener('click', selectItem);
+            }
+        })();
+    </script>
+
+    <script>
+    const slides = document.querySelectorAll('.slide')
+    const clearActives = () => {
+    slides.forEach(slide => slide.classList.remove('active'))
+    }
+    const setActive = (e) => {
+    clearActives()
+    e.target.classList.add('active')
+    }
+    slides.forEach(slide => {
+    slide.addEventListener('click', setActive)
+    })
+    </script>
+
+    <section id="booking">
+    <h1 class="booking-h1">check out our locations</h1>
+        <div class="booking-container">
+            <a href="https://airbnb.com/h/hibbertluxuryessentials">
+                <div class="booking-items">
+                    <img src="https://lh3.googleusercontent.com/XE9ZFpPe3Y6Y-dFrvM1VrZK5AXipKkzuOP7gIEbIu4OBWicLkRER0nVy9UcWe6PjzItqeJFEUkKGiWuWakWWRkb4rixG0jY-97Hffcs2CTxPGy83KqdpND7lus9zahn_sBhhDa-DzcY=w2400" alt="Image cannot be displayed">
+                    <h1>Wethersfield, CT</h1>
+                </div>
+            </a>
+            <a href="">
+                <div class="booking-items">
+                    <img src="https://i.pinimg.com/originals/8c/80/ab/8c80ab16acba1943655e55e04ec9ee7c.jpg" alt="Image cannot be displayed">
+                    <h1>Dallas, TX</h1>
+                </div>
+            </a>
+            <a href="">
+                <div class="booking-items">
+                    <img src="https://i.pinimg.com/originals/8c/80/ab/8c80ab16acba1943655e55e04ec9ee7c.jpg" alt="Image cannot be displayed">
+                    <h1>Chicago, IL</h1>
+                </div>
+            </a>
+            <a href="">
+                <div class="booking-items">
+                    <img src="https://i.pinimg.com/originals/8c/80/ab/8c80ab16acba1943655e55e04ec9ee7c.jpg" alt="Image cannot be displayed">
+                    <h1>Miami, FL</h1>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="airbnb">
+        <div class="airbnb-container">
+            <h1 class="airbnb-h1">
+                Start your own Airbnb business
+            </h1>
+            <p class="airbnb-p">
+                Looking to start your own Airbnb business soon? Follow this link to receive a $25 credit when you successfully
+                complete your first stay! That's funds on top of funds for your first booking!
+            </p>
+            <a href="https://www.airbnb.com/r/dylanh18410?s=6&t=061n0g"><button>START TODAY</button></a>
+        </div>
+    </section>
+
+    <p style="border-bottom: 1px solid #00b7ff; filter: opacity(40%); width: 85%; text-align: center; display: block; margin: 0 auto; padding-top: 4.5rem;"></p>
+
+    <section id = "to-do">
+        <h1>It doesn't get any easier than this</h1>
+        <div class="to-do-container">
+            <div class="to-do-items">
+            <p style="background: rgba(0, 183, 255, 25%); width: 3rem; text-align: center; height: 3rem; border-radius: 50%;">&#x31;</p>
+            <h3>Get your place</h3>
+            <p class="p-para">Secure your second unit that you would like to host on the Airbnb platform</p>
+            </div>
+            <div class="to-do-items">
+            <p style="background: rgba(0, 183, 255, 25%); width: 3rem; text-align: center; height: 3rem; border-radius: 50%;">&#x32;</p>
+            <h3>Contact us</h3>
+            <p class="p-para">Reach out to us for exclusive help on starting your own Airbnb business</p>
+            </div>
+            <div class="to-do-items">
+            <p style="background: rgba(0, 183, 255, 25%); width: 3rem; text-align: center; height: 3rem; border-radius: 50%;">&#x33;</p>
+            <h3>Start today</h3>
+            <p class="p-para">Click the link above to begin hosting and receive your $25 credit after your first booking</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews">
+    <h1 class="reviews-h1">hear what our guests are saying!</h1>
+    <p style="border-bottom: 3px solid #00b7ff; width: 5rem; text-align: center; display: block; margin: 0 auto;"></p>
+    <h2 class="reviews-h2">
+        <i style = "color: black;" class="fa-solid fa-star"></i>
+        5.0 - Average rating from our guests
+    </h2>
+        <div class="reviews-cont">
+            <div class="reviews-items">
+                <img src="https://lh3.googleusercontent.com/5Xl7HI9DL8IWLdCtsbuY0uX7NugIIcLGBqIQpis-juKJqB_ORWI1Zm9TIpNvVRz4u3eqUHkGnbN58sZWd7z5r8uEUyUvuKmoiPbH2k_vZmjaHTDCpZWoGakccbfqpHQsrDYuoPttNls=w2400" alt="Image cannot be displayed">
+                <div class="items-h1-wrap">
+                    <h1 class="items-h1">Luis</h1>
+                    <h4 style="font-weight: 400; margin-top: -0.3rem; margin-bottom: 0rem;">Carteret, NJ</h4>
+                </div>
+                <div class="date-wrap">
+                    <h3 class="date">October 2022</h3>
+                </div>
+                <p class="items-p">Dylan's apartment is brand new. It is very clean and organized. It is conveniently located near restaurants as well as stores in a nice area. Next 
+                    time I am in Hartford I will stay here definitely.
+                </p>
+            </div>
+            <div class="reviews-items">
+                <img src="https://lh3.googleusercontent.com/DxV5_x3iFBdykID-p8T5en7xZuW-QgxUHxmONNP9KXNMfzCM1Qy7Gh7ANaU7OyHAiT_Oq_bvbEwq4Nzs4kCRukmynZBis7iUo9uCPXzQjV6s5a6weDFikZG7jXCl6Zs-FQd0pH7Xyg0=w2400" alt="Image cannot be displayed">
+                <iv class="items-h1-wrap">
+                    <h1 class="items-h1">Cory</h1>
+                    <h4 style="font-weight: 400; margin-top: -0.3rem; margin-bottom: 0rem;">West Chester, PA</h4>
+                </iv>
+                <div class="date-wrap">
+                    <h3 class="date">October 2022</h3>
+                </div>
+                <p class="items-p">Beyond clean! Spacious. Prompt communication with host.</p>
+            </div>
+            <div class="reviews-items">
+                <img src="https://lh3.googleusercontent.com/llAelUavVNurf63VbYrAPQnT1WYh2EeRr0DmadPUvtT2MZ_o4Vmj4dIVVi_vA6IP64ecW7HfGuQCe75ggeM5kYiQGX8no94FVaB2Z8q30TP012xCpXU38_Q6aqUQlQEbrkUMhQnOIYA=w2400" alt="Image cannot be displayed">
+                <div class="items-h1-wrap">
+                    <h1 class="items-h1">Allison</h1>
+                    <h4 style="font-weight: 400; margin-top: -0.3rem; margin-bottom: 0rem;">Smyrna, TN</h4>
+                </div>
+                <div class="dtae-wrap">
+                    <h3 class="date">October 2022</h3>
+                </div>
+                <p class="items-p">Extremely clean; Dylan was friendly and very fast with communication!</p>
+            </div>
+            <div class="reviews-items">
+            <img src="https://lh3.googleusercontent.com/-1un3pzQhXorZMpWOetNgC25P80eDb3DKg6CEpnTuTcFa3KzQCTqe4Nrix7pPIIF6-qa3r9yTA0bCv6ic7IMUmkhOd5FqdKGqVR2X4swgh2TLvtZt1rNq1YGm72HymUJwSPf7hHL8ho=w2400" alt="Image cannot be displayed">
+            <div class="items-h1-wrap">
+                <h1 class="items-h1">Carlos</h1>
+                <h4 style="font-weight: 400; margin-top: -0.3rem; margin-bottom: 0rem;">Plainville, CT</h4>
+            </div>
+            <div class="date-wrap">
+                <h3 class="date">September 2022</h3>
+            </div>
+            <p class="items-p">It was great.</p>
+        </div>
+        </div>
+    </section>
+
+
+    <form id = "contact" class="my-form" action="https://formspree.io/f/xjvzedar" method="POST" >
+    <div class="contact-container">
+        <h1>GET IN TOUCH!</h1>
+        <p style="border-bottom: 3px solid whitesmoke; width: 5rem; text-align: center; display: block; margin: 0 auto;"></p>
+        <ul>
+        <li>
+            <select>
+                <option selected disabled>-- Please choose an option --</option>
+                <option>Booking</option>
+                <option>Locations</option>
+                <option>Other</option>      
+            </select>
+            </li>
+        <li>
+            <div class="grid grid-2">
+            <input type="text" placeholder="First Name" name="name" required>  
+            <input type="text" placeholder="Last Name" name="name" required>
+            </div>
+        </li>
+        <li>
+            <div class="grid grid-2">
+            <input type="email" placeholder="Email" name="email" required>  
+            <input type="tel" placeholder="Phone" name="phone" required>
+            </div>
+        </li>    
+        <li>
+            <textarea placeholder="Message" name="message"></textarea>
+        </li>   
+        <li>
+            <div class="grid grid-3">
+            <div class="required-msg">REQUIRED FIELDS</div>
+            <button class="btn-grid" type="submit" value="submit">
+                <span class="back">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/email-icon.svg" alt="">
+                </span>
+                <span class="front">SUBMIT</span>
+            </button>
+            <button class="btn-grid" type="reset" value="reset">
+                <span class="back">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/eraser-icon.svg" alt="">
+                </span>
+                <span class="front">RESET</span>
+            </button> 
+            </div>
+        </li>    
+        </ul>
+    </div>
+    </form>
+
+    <footer>
+        <a href="index.html"><img id = "footer-logo" src="https://lh3.googleusercontent.com/5iV1Gbpvi3YMYjMVu_p4iVpTbcG3PyQFsgbtU7xJ_lXhXWrKNkIBNvl7XkoxPSvoPasHGCrOaPFfFWrM0zLc8NDAnjLgqw2FWKS52smW74_LKU9hfhsFpK61jBhXIQFMjbGcXIlpmb4=w2400" alt="Image cannot be displayed"></a>
+        <ul class="icons">
+            <li><a href="tel:8609970734"><i class="fa-solid fa-phone"></i></a></li>
+            <li><a href="mailto:hibbertlux@outlook.com"><i class="fa-regular fa-envelope"></i></a></li>
+            <li><a href="https://www.instagram.com/hibbertluxuryessentials/"><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+            <div class="footer-copyright">
+                <p>Copyright Hibbert Luxury Essentials 2022, All Rights Reserved</p>
+            </div>
+    </footer>
+    
+    </body>
+</html>
